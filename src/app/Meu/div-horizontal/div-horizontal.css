@@ -1,0 +1,70 @@
+.div-retangulo {
+    padding: 10px;
+    text-align: center;    
+}
+
+.Titulo3 {
+color: whitesmoke;
+}
+
+.Titulo3 a {
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Titulo3 a:hover {
+  text-decoration: underline;
+}
+
+.div-retangulo {
+  /*background-image: url("/TI-4.jpg");*/
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  transition: background-image 0.3s ease;
+}
+
+.botao-fundo {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #123070;
+  color: white;
+}
+
+.botao-fundo:hover {
+  opacity: 0.9;
+}
+
+.div-imagem-nofundo {
+  position: relative;
+  min-height: 900px;
+
+  background-image: url("/TI.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-imagem-nofundo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Titulo4 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size:50px;
+}

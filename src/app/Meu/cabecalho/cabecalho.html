@@ -1,0 +1,26 @@
+<header class="Cabecalho">
+    <div class="cabecalho-esquerdo">
+        <span class="">
+            Bem-Vindo ao meu site pessoal. Um pouco sobre mim abaixo.
+        </span>
+    </div>
+
+    <div class="cabecalho-direito">
+        <span class="texto-cabecalho">A data de hoje é:</span>
+
+        <time class="data-hora" [attr.datetime]="dataISO">
+            {{ dataTexto }}
+        </time>
+
+        <!-- <time class="data-hora" id="data-atual"></time> html puro -->
+
+        <span class="texto-cabecalho">e as horas agora são:</span>
+
+        <time class="data-hora" [attr.datetime]="horaISO">
+            {{ horaTexto }}
+        </time>
+
+        <!-- <time class="data-hora" id="hora-atual"></time> html puro -->
+
+    </div>
+</header>

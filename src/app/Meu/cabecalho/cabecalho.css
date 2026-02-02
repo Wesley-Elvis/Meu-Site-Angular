@@ -1,0 +1,55 @@
+.Cabecalho {
+    /*#2c2f4a*/
+    background-color: darkgrey;
+    color: dimgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*padding-left: 200px;*/
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .Cabecalho {
+        flex-direction: column;
+        height: auto;
+        gap: 8px;
+    }
+
+    .cabecalho-esquerdo,
+    .cabecalho-direito {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.cabecalho-esquerdo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+    padding-left: 20px;
+}
+
+.cabecalho-direito {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: #1d1d1d;
+    /*padding: 0 60px;*/
+}
+
+.texto-cabecalho {
+    color: goldenrod;
+}
+
+.data-hora {
+    color: cadetblue;
+}

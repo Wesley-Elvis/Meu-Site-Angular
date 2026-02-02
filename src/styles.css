@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Versão mais moderna (opcional):
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ /*  
+} ||| Isso aqui comentado é o padrão mais moderno dessa parte!
+  Não fazer em Tailwind / Bootstrap / Angular Material*/
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  /* Isso faz o conteúdo ocupar todo o espaço sobrando, empurrando o rodapé para baixo */
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  /* distância entre as duas colunas verticais. Estar em 0 é redundante.*/
+  padding: 0px;
+  /* se aumentar o valor, aparece as bordas*/
+  background-color: #f0e6e6;
+}
+
+/* Você pode adicionar estilos globais neste arquivo e também importar outro estilos.*/

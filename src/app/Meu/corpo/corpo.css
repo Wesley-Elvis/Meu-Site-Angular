@@ -1,0 +1,99 @@
+.div-com-dois {
+  display: flex;
+  width: 100%;
+  min-height: 300px; /* opcional */
+}
+/*
+.div-esquerdo-imagem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*animation: slideLeft 0.8s ease-out forwards;
+
+}
+
+.div-esquerdo-imagem img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}  Isso foi removido porque a imagem centralizava 
+  e aparecia o background (fundo)*/
+
+.div-esquerdo-imagem {
+  flex: 1;
+  overflow: hidden; /* MUITO IMPORTANTE */
+}
+
+.div-esquerdo-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.div-direito-texto {
+  flex: 1;
+  padding: 20px;
+  background-color:#123070;
+  /*animation: slideRight 0.8s ease-out forwards;*/
+}
+/*
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ Aqui é animação para CSS puro.*/
+
+.animado {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.animado.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.paragrafo {
+    /*background-color: black;*/
+    color:rgb(196, 196, 196);
+    padding: 20px;
+    text-align: center; 
+    font-size: 2rem;   
+    text-shadow: 2px 2px 4px rgba(23, 148, 65, 0.3);    
+}
+
+.Titulo2 {
+    /*background-color: rgb(16, 185, 53);*/
+    color:#4895c9;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    /*text-shadow: 2px 2px 4px rgba(18, 92, 24, 0.3);*/
+}
+/* Aumenta a imagem quando está no mobile*/
+@media (max-width: 768px) {
+  .div-com-dois {
+    flex-direction: column;
+  }
+}
