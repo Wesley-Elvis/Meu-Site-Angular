@@ -42,8 +42,8 @@ color: whitesmoke;
 .div-imagem-nofundo {
   position: relative;
   min-height: 900px;
-
-  background-image: url("TI.jpg");
+   /* Imagem TI aqui */
+  background-image: url("./TI.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
